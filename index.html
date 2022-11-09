@@ -1,30 +1,50 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
     <title>Göran H, git content page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      $(".header-subtitle").click(function () {
+        $(".header-about-me").toggle(1000);
+      })
+    });
+    </script>
   </head>
   <body>
-        <div class="triangle"></div>
-    <div class="parent">
-      <div class="div1">
-      <div class="letter">G.H</div>
-        <div class="introtext">
-          <p>This is the landing page for my ramblings in code.</p>
-          <p> some useful, some less. </p>
-          <p> Creating as I go, completed some, others left for later,</p>
-          <p>always eager to learn more, creativity is my muse.
-        </div>
-      </div>
-      <div class="div2">
-
-        <p class="headerText">After a career as a teacher in ICT and programming using GIT for my students and             maintaining a youtube channel with video lessons, this is a fresh start. A chance to be         creative without the need to teach. Please feel free to browse below, if you find               anything useful, just copy it. No worries.</p><p id="headerTextSign"><span id="signature">/Göran</span> 8 nov 22</p>
-      </div>
-      <div class="div3">
-        Main 
-      </div>
-    </div>
-
+    <header>
+      <section class="header-content">
+        <h1 class="header-title animate-pop-in">Göran H</h1>
+        <h2 class="header-subtitle animate-pop-in" id="change-text">
+          About me
+          <svg viewBox="0 0 512 512" width="25" title="question-circle">
+            <path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z" />
+          </svg>
+        </h2>
+      </span>
+        <p class="header-about-me" id="toggle-text">
+          I have been a teacher in programming for many years, using GIT and youtube to help my students.
+          But, teaching is not about being creative in code, it is more about being creative in alternating
+          methods and helping those who struggle.
+          When I stopped working as a teacher I deleted my old GIT account, to start fresh. This time
+          I want to be creative. I want to do the stuff I could not do as a teacher. A chance to be
+          creative withou the need to teach.
+          I started building this gallery / portfolio in september 22. Right now I have no idea where it will end.
+          / Göran
+          </p>
+        <h3 class="header-subtitle2 animate-pop-in">
+          My projects
+          <p class="header-action">
+            <a href="#">
+              <svg viewBox="0 0 320 512" width="25" title="level-down-alt">
+                <path id="svg-color" d="M313.553 392.331L209.587 504.334c-9.485 10.214-25.676 10.229-35.174 0L70.438 392.331C56.232 377.031 67.062 352 88.025 352H152V80H68.024a11.996 11.996 0 0 1-8.485-3.515l-56-56C-4.021 12.926 1.333 0 12.024 0H208c13.255 0 24 10.745 24 24v328h63.966c20.878 0 31.851 24.969 17.587 40.331z" />
+              </svg>
+            </a>
+         </p>
+       </h3>
+       </section>
+     </header>
   </body>
 </html>
-
-    
